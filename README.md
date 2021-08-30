@@ -20,6 +20,10 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# storybook
+$ npx nuxt storybook
+$ npx nuxt storybook build
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
@@ -72,3 +76,16 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+## NUXTデフォルトの構成以外のディレクトリについて
+※ `nuxt.config.js` の `srcDir: 'src'` にしているので
+`./src` 配下のディレクトリの構成
+
+### utils
+vueに依存しないutility関数を定義
+
+## NUXTのinjectについて
+vueファイル内のtemplate/scriptで共通で使える関数を`inject`機能を使って定義しています。
+使用する時は`$`を先頭につけて呼び出します。
+
+`src/plugins/vue-injection.js`
