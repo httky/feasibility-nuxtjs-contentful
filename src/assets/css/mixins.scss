@@ -1,0 +1,66 @@
+// mixins
+// vueコンポーネントで共通で使用するものを記載
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin hideaway {
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+@mixin baseHover {
+  @include mq-pc {
+    transition: opacity .3s cubic-bezier($EASING_5_QuartOut);
+  }
+  @include mq-sp {}
+  &:hover {
+    @include mq-pc {
+      opacity: .7;
+    }
+    @include mq-sp {
+      animation: baseHover 1.0s ease-out 1;
+    }
+  }
+}
+
+// SMART PHONE
+@mixin mq-sp {
+  @media screen and (max-width: #{$MQ_BREAKPOINT - 1}) {
+    @content;
+  }
+}
+// PC
+@mixin mq-pc {
+  @media screen and (min-width: #{$MQ_BREAKPOINT}) {
+    @content;
+  }
+}
+
+// PC $MIDDLE_PC_CONTENT_WIDTH以上の時
+@mixin mq-pc-middele-gt {
+  @media screen and (min-width: #{$MIDDLE_PC_CONTENT_WIDTH}) {
+    @content;
+  }
+}
+
+@function calc-sp($size, $viewport: 375) {
+  @return calc(100vw * (#{$size} / #{$viewport}));
+}
+
+@function calc-pc($size, $viewport: 1080) {
+  @return calc(100vw * (#{$size} / #{$viewport}));
+}
+
+@function baseTransition($property) {
+  @return $property .3s cubic-bezier($EASING_5_QuartOut);
+}

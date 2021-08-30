@@ -1,0 +1,64 @@
+// utilities
+// vueに依存しないユーティリティ
+
+// PCの時のみ表示
+.u-pc {
+  @include mq-pc {
+    display: block!important;
+  }
+  @include mq-sp {
+    display: none!important;
+  }
+}
+
+// SPの時のみ表示
+.u-sp {
+  @include mq-pc {
+    display: none!important;
+  }
+  @include mq-sp {
+    display: block!important;
+  }
+}
+
+// 電話番号リンク
+.u-tel {
+  &[href*="tel:"] {
+    @include mq-pc {
+      pointer-events: none;
+    }
+    @include mq-sp {
+      text-decoration: underline!important;
+    }
+  }
+}
+
+// テキストを中寄せにする
+.u-text-center {
+  text-align: center!important;
+}
+// テキストを左寄せにする
+.u-text-left {
+  text-align: left!important;
+}
+// テキストを右寄せにする
+.u-text-right {
+  text-align: right!important;
+}
+
+// ブロック要素を中寄せにする
+.u-block-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+// SEO対策でテキスト情報として残す時に使う
+.u-text-hide {
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+}

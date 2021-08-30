@@ -1,4 +1,9 @@
 # feasibility-nuxtjs-contentful
+- node.js >= 14.8.0
+- npm >= 6.14.7
+- NUXT.js >= 2.15.7
+    - storybook
+- Contentful（CMS）
 
 ## Build Setup
 

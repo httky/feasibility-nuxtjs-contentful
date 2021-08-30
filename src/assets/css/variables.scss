@@ -1,0 +1,71 @@
+// variables
+// vueコンポーネントで共通で使用するものを記載
+
+$BASE_COLOR1: #111;
+$BASE_COLOR2: #fff;
+$BASE_COLOR3: #666666;
+$BASE_DISABLED_COLOR: #BEBEBE;
+$BASE_BG_COLOR1: #fff;
+$BASE_BG_COLOR2: #BEBEBE;
+$BASE_BG_COLOR3: #F5F5F5;
+$BASE_BORDER_COLOR1: #BEBEBE;
+$BASE_BORDER_COLOR2: #CCCCCC;
+$BASE_BRAND_COLOR1: #007440;
+$BASE_BRAND_COLOR2: #DC1E37;
+$BASE_BRAND_COLOR3: #000;
+
+//$FONT_COLOR: #333;
+//$LINK_COLOR: $FONT_COLOR;
+//$LINE_HEIGHT: 1.6;
+$BASE_LETTER_SPACING: 0.04em;
+
+$FONT_FAMILY: "Hiragino Sans",Meiryo,"Helvetica Neue",Arial,sans-serif;
+$FONT_NORMAL_VALUE: 300;
+$FONT_BOLD_VALUE: 500;
+$FONT_BOLD_VALUE_SP: 600;
+
+$MQ_BREAKPOINT: 768px;
+$MAX_PC_CONTENT_WIDTH: 1366px;
+$MIDDLE_PC_CONTENT_WIDTH: 1080px;
+$MIN_PC_CONTENT_WIDTH: 768px;
+$MAX_HEADER_WIDTH: 1280px;
+
+$PSD_CANVAS_WIDTH_SP: 750; // spのpsdカンバスサイズ
+
+$EASING_Linear: 0.0, 0.0, 1.0, 1.0;
+// sine
+$EASING_1_SineIn: .47, 0, .745, .715;
+$EASING_1_SineOut: .39, .575, .565, 1;
+$EASING_1_SineInOut: .445, .05, .55, .95;
+// quad
+$EASING_2_QuadIn: .55, .085, .68, .53;
+$EASING_2_QuadOut: .25, .46, .45, .94;
+$EASING_2_QuadInOut: .455, .03, .515, .955;
+// cubic
+$EASING_3_CubicIn: .55, .055, .675, .19;
+$EASING_3_CubicOut: .215, .61, .355, 1;
+$EASING_3_CubicInOut: .645, .045, .355, 1;
+// quart
+$EASING_4_QuartIn: .895, .03, .685, .22;
+$EASING_4_QuartOut: .165, .84, .44, 1;
+$EASING_4_QuartInOut: .77, 0, .175, 1;
+// quint
+$EASING_5_QuintIn: .755, .05, .855, .06;
+$EASING_5_QuartOut: .23, 1, .32, 1;
+$EASING_5_QuartInOut: .86, 0, .07, 1;
+// expo
+$EASING_6_ExpoIn: .95, .05, .795, .035;
+$EASING_6_ExpoOut: .19, 1, .22, 1;
+$EASING_6_ExpoInOut: 1, 0, 0, 1;
+// circ
+$EASING_7_CircIn: .6, .04, .98, .335;
+$EASING_7_CircOut: .075, .82, .165, 1;
+$EASING_7_CircInOut: .785, .135, .15, .86;
+// inback
+$EASING_BackIn: .6, -0.28, .735, .045;
+$EASING_BackOut: .175, .885, .32, 1.275;
+$EASING_BackInOut: .68, -0.55, .265, 1.55;
+
+$BASE_TRANSITION: transform .4s cubic-bezier($EASING_6_ExpoOut);
+$BASE_IMAGE_SCALE: scale3d(1.08, 1.08, 1.08);
+$BASE_SCALE_TRANSITION: transform .8s cubic-bezier($EASING_4_QuartOut);
