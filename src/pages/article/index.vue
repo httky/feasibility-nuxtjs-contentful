@@ -23,6 +23,10 @@
         </nuxt-link>
       </li>
     </ul>
+    <br>
+    <nuxt-link to="/">
+      TOPへ
+    </nuxt-link>
   </div>
 </template>
 
