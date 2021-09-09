@@ -84,7 +84,15 @@ export default {
 
 <style lang="scss" scoped>
 .content {
+  text-align: center;
   @include mq-pc {}
   @include mq-sp {}
+  li {
+    text-align: left;
+    border: 1px solid #ccc;
+    display: block;
+    width: 300px;
+    margin: 10px auto 0;
+  }
 }
 </style>
