@@ -55,7 +55,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
     // https://github.com/nuxt/postcss8
-    '@nuxt/postcss8'
+    '@nuxt/postcss8' // storybook対策
   ],
   styleResources: {
     scss: [
